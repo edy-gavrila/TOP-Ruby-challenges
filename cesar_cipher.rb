@@ -4,6 +4,7 @@ def caesar_cipher(str, offset)
         ascii_code = char.ord 
         offset_code = ascii_code + offset
 
+        #check for outside of alpahabet range
         if (ascii_code < 65) || ((ascii_code > 90) &&(ascii_code < 97)) || (ascii_code > 122)
             offset_code = ascii_code
         end
@@ -30,4 +31,4 @@ end
 result.join("")
 end
 
-p caesar_cipher("What a string!", 5)
+p caesar_cipher("Eduard Gavrila", 5)
